@@ -37,11 +37,11 @@ public class test2 {
         boolean result2 = prescription.addRemark("Client Remark", "Client"); 
         assertFalse(result2); // Duplicate remark from the client should return false
 
-        // Test Case 5: Case-sensitivity check (optometrist role in lowercase)
+        // Test Case 5: Case-sensitivity check (optometrist role in Uppercase)
         result1 = prescription1.addRemark("optometrist Remark", "Optometrist");
         assertFalse(result1); // Case mismatch in role or remark content
 
-        // Test Case 6: Invalid roles that are not "Client" or "Optometrist"
+        // Test Case 6: All Invalid parameters"
         result = prescription1.addRemark("clien", "ABC"); 
         result1 = prescription1.addRemark("Optometrist Remarkkkk", "ACD"); 
         assertFalse(result);  // Invalid role ("ABC")

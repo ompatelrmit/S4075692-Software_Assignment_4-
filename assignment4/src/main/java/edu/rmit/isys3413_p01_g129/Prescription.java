@@ -51,12 +51,6 @@ public class Prescription {
             return false;
         }
 
-        // Ensure examination date is not in the future
-        if (examinationDate.after(new Date())) {
-            System.out.println("Examination date must be before today's date");
-            return false;
-        }
-
         // Validation for optometrist name length
         if (optometrist.length() < 8 || optometrist.length() > 25) {
             System.out.println("Optometrist name must be between 8 and 25 characters");

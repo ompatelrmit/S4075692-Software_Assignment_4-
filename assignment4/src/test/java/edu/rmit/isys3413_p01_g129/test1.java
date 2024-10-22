@@ -62,9 +62,9 @@ public class test1 {
         result = prescription.addPrescription(10,"John","Patel","123 Fake St, Melbourne 3000 VIC ",1.00f,1.00f,4.01f,date,"Dr. Smith");
         assertFalse(result); // Cylinder above valid range
 
-        // Test Case 5: Invalid future date for the examination date
+        // Test Case 5: Invalid all of the field values
         Date date1 = new GregorianCalendar(2025, Calendar.FEBRUARY, 11).getTime(); // Future date
-        result = prescription.addPrescription(10,"John","Patel","123 Fake St, Melbourne 3000 VIC ",1.00f,1.00f,1.00f,date1,"Dr. Smith");
+        result = prescription.addPrescription(10,"Joh","Pat","123 Fake St",20.01f,180.01f,-4.01f,date1,"Dr.");
         assertFalse(result); // Examination date cannot be in the future
 
         // Test Case 6: Invalid optometrist name (too short, too long)
