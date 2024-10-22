@@ -8,4 +8,4 @@ Sphere: 1.0
 Cylinder: 1.0
 Axis: 1.0
 Examination Date: 11-02-2024
-optometrist Name: Dr. Smith
+Optometrist Name: Dr. Smith
